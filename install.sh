@@ -15,7 +15,7 @@ tar -xzf $tarball
 
 chmod +x tunneler-client
 
-mv hugo /usr/local/bin/
+mv tunneler-client /usr/local/bin/
 
 popd
 
