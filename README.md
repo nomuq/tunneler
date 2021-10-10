@@ -1,5 +1,5 @@
 # tunneler.io
 
 ```sh
-curl -sfL https://install.goreleaser.com/github.com/goreleaser/goreleaser.sh | sh
+curl -sfL https://raw.githubusercontent.com/tunnelerio/tunneler/main/install.sh | sh
 ```
