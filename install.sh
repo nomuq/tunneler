@@ -36,6 +36,8 @@ if [  -n "$(uname -a | grep Ubuntu)" ]; then
     iptables -I INPUT -p udp --dport 1194 -j ACCEPT
     iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
     sysctl -w net.ipv4.ip_forward=1
+    
+    mkdir /etc/openvpn/ccd
 
     echo "ALL SET!!!"
 
