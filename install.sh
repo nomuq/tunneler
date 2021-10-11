@@ -17,7 +17,7 @@ if [  -n "$(uname -a | grep Ubuntu)" ]; then
 
     chmod +x tunneler-client
 
-    mv tunneler-client /usr/local/bin/
+    sudo mv tunneler-client /usr/local/bin/
 
     rm $tarball
 
@@ -30,7 +30,7 @@ if [  -n "$(uname -a | grep Ubuntu)" ]; then
     # echo "tunneler-client binary version: $version"
 
     echo "install openvpn"
-    apt-get install openvpn -y
+    sudo apt-get install openvpn -y
 
     echo "setting up iptables"
     iptables -I INPUT -p udp --dport 1194 -j ACCEPT
